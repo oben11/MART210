@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World! Site Title</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+    <title>Classic Cars Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        .link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .link a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .link a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Classic Cars Gallery</h1>
+</header>
+
+<div class="content">
+    <p>Welcome to the Classic Cars Gallery. Here you can explore stunning images of some iconic classic cars from the past. Each of these cars represents a piece of automotive history and craftsmanship.</p>
+
+    <div class="gallery">
+        <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/01/ford-mustang-429.jpg" alt="Classic Car 1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Classics_in_museum.jpg/1600px-Classics_in_museum.jpg" alt="Classic Car 2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/1932_Nash_Advanced_Eight_4-door_convertible_%28CCCA_Full_Classic%29_at_2015_AACA_Eastern_Regional_Fall_Meet_02of17.jpg" alt="Classic Car 3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Bundesarchiv_Bild_102-10248%2C_Mecklenburg%2C_Autoungl%C3%BCck.jpg" alt="Classic Car 4">
+    </div>
+
+    <div class="link">
+        <p>Interested in learning more about classic cars? Check out this article:</p>
+        <a href="https://en.wikipedia.org/wiki/Classic_car" target="_blank">Classic Cars - Wikipedia</a>
+    </div>
+</div>
+
+</body>
 </html>
